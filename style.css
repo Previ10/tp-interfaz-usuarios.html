@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    background: url("assets/codeWallpaper.png") no-repeat center center fixed;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr auto; 
+    overflow-y: scroll; 
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: #000;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+section{
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.navbar .logo {
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.navbar .logo span {
+    color: #ee9725;
+
+}
+
+.navbar a:hover {
+    color: #ee9725;
+}
+
+.navbar .logo:hover {
+    color: #f33e0c;
+
+}
+
+.navbar .menu.links {
+    display: flex;
+    gap: 40px;
+}
+
+.hero-section {
+    grid-row: 1;
+    min-height: 100vh; 
+    padding: 10vh 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: white;
+    margin-bottom: 90px; 
+    margin-top: 90px; 
+}
+.hero-section .content {
+    color: rgb(255, 255, 255);
+}
+
+.hero-section .content h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    margin-top: 15px;
+    max-width: 600px;
+}
+
+.hero-section .content p {
+    font-weight: 300;
+    margin-top: 15px;
+    max-width: 600px;
+}
+.hero-section .content button {
+    font-weight: 300;
+    margin-top: 15px;
+    max-width: 200px; 
+    padding: 10px 20px; 
+    background-color: #ee9725; 
+    color: white; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.hero-section .content button:hover {
+    background-color: #f33e0c; 
+}
+.contact-form {
+    scroll-behavior: smooth;
+    transition-duration: 2s;
+    grid-row: 2;
+    min-height: 100vh; 
+    padding: 10vh;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: white;
+}
+
+.contact-form h2 {
+    font-size: 2rem; 
+    margin-bottom: 20px; 
+}
+.contact-form label {
+    font-weight: bold;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    background-color: #ee9725;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #f33e0c;
+  }
+
+  .footer {
+    height:30px;
+    background: black;
+    color: #ffffff;
+    padding: 90px;
+    text-align: center;
+}

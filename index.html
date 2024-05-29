@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ignacio Index</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+   
+    .hero-section .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100%; /
+    }
+
+    .hero-section .content button,
+    .hero-section .content audio {
+      margin: 10px; 
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">Ignacio Previ <span>.</span></a>
+      <ul class="menu links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Testimonios</a></li>
+        <li><a href="#">Información</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero-section">
+    <div class="content">
+      <h1>Desarrollador Fullstack:
+        especialista en Flutter</h1>
+
+      <p>Un desarrollador Flutter es un profesional especializado en usar el framework Flutter de Google.</p>
+      <p>Con el crea aplicaciones móviles, web y de escritorio con una única base de código en el lenguaje Dart.</p>
+
+      <button id="contact-button">contactate ahora</button>
+      <audio controls src="C:\Users\jorpre\OneDrive\Escritorio\Tp-interfaz-de-usuario\Index-Tp\assets\audio\minimalistic-inspiration-design-ambient-201448 (1).mp3"></audio>
+    </div>
+    <div class="video-container">
+      <<iframe 
+      width="560" height="315" src="https://www.youtube.com/embed/NDySXmHdEwY?si=JOK7OoXnIcCKcK7B&amp;start=138" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="contact-form" id="contact-form">
+    <h2>Contacto</h2>
+    <form action="#" method="post">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>Derechos de autor &copy; 2024 Ignacio Previ. Todos los derechos reservados.</p>
+  </footer>
+  <script src="logic.js"></script>
+</body>
+</html>
